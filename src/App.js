@@ -1,12 +1,16 @@
-import React, { Component } from "react";
-import { Text, View } from "react-native";
+import React, { Component } from 'react';
+import { Container, Header, Left, Body, Right, Button, Icon, Title, Subtitle } from 'native-base';
 
-export default class App extends Component {
+export default class HeaderTitleSubtitleExample extends Component {
   render() {
     return (
-      <View>
-        <Text> Remote Download Mobile Client </Text>
-      </View>
+      <Container>
+        <Header>
+          <Body style={{ flex: 5 }}>
+            <Title>Remote Download Mobile Client</Title>
+          </Body>
+        </Header>
+      </Container>
     );
   }
 }
